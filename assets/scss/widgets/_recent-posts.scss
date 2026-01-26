@@ -1,0 +1,33 @@
+.recent-posts-widget {
+  .post-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 5px;
+
+      a {
+        color: var(--default-color);
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+    }
+
+    time {
+      display: block;
+      font-style: italic;
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 50%);
+    }
+  }
+}

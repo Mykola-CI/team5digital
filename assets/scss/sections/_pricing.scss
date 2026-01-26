@@ -1,0 +1,111 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing {
+  .pricing-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+      font-weight: 400;
+      margin: -20px -20px 20px -20px;
+      padding: 20px 15px;
+      font-size: 16px;
+      font-weight: 600;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      background: color-mix(in srgb, var(--default-color), transparent 95%);
+    }
+
+    h4 {
+      font-size: 36px;
+      font-weight: 600;
+      font-family: var(--heading-font);
+
+      sup {
+        font-size: 20px;
+        top: -15px;
+        left: -3px;
+      }
+
+      span {
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+
+    ul {
+      padding: 15px 0;
+      list-style: none;
+      text-align: center;
+      line-height: 20px;
+      font-size: 14px;
+
+      li {
+        padding-bottom: 16px;
+      }
+
+      i {
+        color: var(--accent-color);
+        font-size: 18px;
+        padding-right: 4px;
+      }
+
+      .na {
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .btn-wrap {
+    background: color-mix(in srgb, var(--default-color), transparent 95%);
+    margin: 0 -20px -20px -20px;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .btn-buy {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    transition: 0.3s;
+
+    &:hover {
+      background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    }
+  }
+
+  .featured {
+    h3 {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+    }
+  }
+
+  .advanced {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+  }
+}

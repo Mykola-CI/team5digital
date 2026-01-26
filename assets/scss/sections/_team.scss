@@ -1,0 +1,75 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team {
+  .team-member {
+    background-color: var(--surface-color);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+    .member-img {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .social {
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      right: 0;
+      opacity: 0;
+      transition: ease-in-out 0.3s;
+      text-align: center;
+
+      a {
+        background: color-mix(in srgb, var(--contrast-color), transparent 25%);
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin: 0 3px;
+        border-radius: 4px;
+        width: 36px;
+        height: 36px;
+        transition: ease-in-out 0.3s;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          color: var(--contrast-color);
+          background: var(--accent-color);
+        }
+      }
+
+      i {
+        font-size: 18px;
+        line-height: 0;
+      }
+    }
+
+    .member-info {
+      padding: 25px 15px;
+
+      h4 {
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+
+      span {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
+      }
+    }
+
+    &:hover {
+      .social {
+        opacity: 1;
+        bottom: 15px;
+      }
+    }
+  }
+}

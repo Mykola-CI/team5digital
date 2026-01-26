@@ -1,0 +1,31 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore temporary files and backups
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignore build/compiled assets (if any)
+dist/
+build/
+
+# Ignore dependency directories (if applicable in future)
+node_modules/
+
+# Ignore IDE/Editor-specific files
+.vscode/
+*.code-workspace
+
+# Ignore Sass/SCSS cache files (if using Sass in the future)
+.sass-cache/
+
+# Ignore Bootstrap source maps (if not needed)
+*.map
+
+# Ignore other system or temporary files
+Thumbs.db

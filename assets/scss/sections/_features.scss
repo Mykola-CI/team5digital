@@ -1,0 +1,96 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features {
+  .nav-tabs {
+    border: 0;
+  }
+
+  .nav-link {
+    background-color: var(--surface-color);
+    color: var(--heading-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    padding: 15px 20px;
+    transition: 0.3s;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+
+    i {
+      padding-right: 15px;
+      font-size: 48px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    &.active {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      border-color: var(--accent-color);
+
+      h4 {
+        color: var(--contrast-color);
+      }
+    }
+
+    @media (max-width: 768px) {
+      i {
+        padding: 0;
+        line-height: 1;
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      padding: 15px;
+
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .tab-content {
+    margin-top: 30px;
+  }
+
+  .tab-pane {
+    h3 {
+      color: var(--heading-color);
+      font-weight: 700;
+      font-size: 26px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding-bottom: 10px;
+      }
+
+      i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: var(--accent-color);
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
