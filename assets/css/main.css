@@ -806,12 +806,19 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero .carousel-container {
+  /* .hero .carousel-container {
     min-height: 90vh;
-  }
+  } */
 
   .hero h2 {
     font-size: 28px;
+    max-width: 16ch;
+  }
+
+  .carousel-container p {
+    font-size: 14px;
+    max-width: 34ch;
+    margin-top: 30px;
   }
 
   .section-title {
