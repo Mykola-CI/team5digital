@@ -1087,7 +1087,7 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
-  padding: 60px 30px 60px 70px;
+  padding: 0;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
   height: 100%;
@@ -1109,9 +1109,10 @@ section,
 
 .services .service-item h3 {
   font-weight: 700;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 0px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
+  opacity: 0.6;
 }
 
 .services .service-item p {
@@ -1138,6 +1139,11 @@ section,
   }
 }
 
+/* Image swap: show img1, hide img2 by default */
+.services .service-item .img2 {
+  display: none;
+}
+
 @media (min-width: 1365px) {
   .services .service-item:hover {
     transform: translateY(-10px);
@@ -1145,6 +1151,16 @@ section,
 
   .services .service-item:hover h3 {
     color: var(--accent-color);
+    opacity: 1;
+  }
+
+  /* Swap images on hover */
+  .services .service-item:hover .img1 {
+    display: none;
+  }
+
+  .services .service-item:hover .img2 {
+    display: block;
   }
 }
 
