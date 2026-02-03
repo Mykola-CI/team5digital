@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://team5.es/sitemap.xml

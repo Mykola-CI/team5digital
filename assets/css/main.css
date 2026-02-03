@@ -897,8 +897,8 @@ section,
 
 .about ul li {
   padding-bottom: 5px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .about ul i {
@@ -1121,27 +1121,33 @@ section,
   margin-bottom: 0;
 }
 
-@media (hover: none),
-(pointer: coarse) {
-  .services .service-item .service-arrow {
-    display: inline;
-    color: var(--accent-color);
-    font-size: 24px;
-    vertical-align: middle;
-    /* position: relative; 
-  top: 2px; */
-  }
-}
 
-@media (hover: hover) and (pointer: fine) {
-  .services .service-item .service-arrow {
-    display: none; /* Hide the icon on non-touch devices */
-  }
-}
 
-/* Image swap: show img1, hide img2 by default */
+/* Image swap: stack images and use opacity for smooth fade */
+.services .service-item .img1,
 .services .service-item .img2 {
-  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.services .service-item .img2 {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.services .service-item .img1 {
+  opacity: 1;
+}
+
+/* Touch device swap via class */
+.services .service-item.touched .img1 {
+  opacity: 0;
+}
+
+.services .service-item.touched .img2 {
+  opacity: 1;
 }
 
 @media (min-width: 1365px) {
@@ -1154,13 +1160,13 @@ section,
     opacity: 1;
   }
 
-  /* Swap images on hover */
+  /* Swap images on hover with fade */
   .services .service-item:hover .img1 {
-    display: none;
+    opacity: 0;
   }
 
   .services .service-item:hover .img2 {
-    display: block;
+    opacity: 1;
   }
 }
 
@@ -2110,13 +2116,6 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
 
 /*--------------------------------------------------------------
