@@ -14,7 +14,7 @@
 	if (!isTouchDevice) return;
 
 	document.addEventListener("DOMContentLoaded", function () {
-		const serviceItems = document.querySelectorAll(".services .service-item");
+		const serviceItems = document.querySelectorAll(".service-item");
 
 		serviceItems.forEach(function (item) {
 			const img1 = item.querySelector(".img1");
@@ -36,7 +36,7 @@
 		document.addEventListener(
 			"touchstart",
 			function (e) {
-				if (!e.target.closest(".services .service-item")) {
+				if (!e.target.closest(".service-item")) {
 					serviceItems.forEach(function (item) {
 						item.classList.remove("touched");
 					});
