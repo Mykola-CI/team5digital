@@ -102,6 +102,12 @@ h6 {
 	font-family: var(--heading-font);
 }
 
+.doc h2,
+.doc h3,
+.doc h4 {
+	font-family: var(--default-font);
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -815,9 +821,10 @@ section,
 }
 
 @media (max-width: 768px) {
-	/* .hero .carousel-container {
-    min-height: 90vh;
-  } */
+	/* section,
+	.section {
+		padding: 0;
+	} */
 
 	.hero h2 {
 		font-size: 28px;
