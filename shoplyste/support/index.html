@@ -164,7 +164,7 @@
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong
-										>Active Shopping List
+										>Active Shopping List Content
 										<span
 											class="mdi mdi-shopping-outline"
 											style="font-size: 1.2em; vertical-align: middle"
@@ -173,8 +173,9 @@
 									>
 								</li>
 								<p>
-									Takes you to your currently active shopping list contents
-									where you can add and check off items.
+									Takes you to your currently active shopping list contents or
+									in other words - a Home page - where you can add and check off
+									items.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -219,7 +220,7 @@
 									tracker.
 								</p>
 							</ul>
-							<h4>Manage Shopping Lists</h4>
+							<h4 class="pt-4">Manage Shopping Lists</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -262,7 +263,7 @@
 									It is going to remove all items within that list as well.
 								</p>
 							</ul>
-							<h4>Manage List Contents</h4>
+							<h4 class="pt-4">Manage List Contents</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -278,26 +279,41 @@
 									<strong>Collect items quickly:</strong>
 								</li>
 								<p>
-									Typing prompts from your Product Library help you collect
-									items faster. Every new item you include is saved for next
-									time.
+									Typing a first letter causes prompts to appear from your
+									Product Library helping you collect items faster. <br />Every
+									new item you include is saved in your library for next time.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<strong>Mark as collected:</strong>
+									<strong>Mark as Done:</strong>
 								</li>
 								<p>
 									Check off your items as you put them in your cart. Simply tap
-									on the circle at the left of an item.
+									on the circle at the left of an item. <br />Remember, tapping
+									on the item text itself will open the edit mode, allowing you
+									to change the name or details of the item.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<strong>Toggle views:</strong>
+									<strong>Toggle views with</strong>&nbsp;&nbsp;
+									<span
+										class="mdi mdi-format-list-text"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span
+									>&nbsp; <strong>and back with</strong> &nbsp;<span
+										class="mdi mdi-format-list-checkbox"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span
+									>&nbsp;:
 								</li>
 								<p>
-									Flip between Category/Aisle view and Simple List view. While
-									in Simple List view, reorder items by dragging (long-press on
-									handle).
+									Flip between Category/Aisle view and Simple List view.
+									<br />While in Simple List view, reorder items by dragging
+									(long-press on handle [<span
+										class="mdi mdi-drag-vertical"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span
+									>]).
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -305,28 +321,59 @@
 								</li>
 								<p>
 									Swipe left to set quantity (+/-) or assign a Category (folder
-									icon). Swipe right to delete an item from the list.
+									icon [
+									<span
+										class="mdi mdi-folder-arrow-up-down-outline"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span>
+									]). Swipe right to delete an item from the list.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong>Move all items:</strong>
 								</li>
 								<p>
-									Plan efficiently by moving all items to another list. Tap the
-									"three dots" menu and select "Move all items".
+									Plan efficiently by moving all items to another list. Press
+									the "Move Items" button underneath your Active List and select
+									the target List. <br />
+									Note that this action is going to merge all items with those
+									in the target list.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Delete all 'Done' items:</strong>
+								</li>
+								<p>
+									Press the "Clear Done" button underneath your Active List to
+									remove all items you've checked off. <br />
+									Note that this action is permanent and cannot be undone.
 								</p>
 							</ul>
 
-							<h4>Manage Product Categories</h4>
+							<h4 class="pt-4">Manage Product Categories</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong>Customize Aisles:</strong>
 								</li>
 								<p>
-									On the Lists screen, toggle to "Product Categories". Create
-									unique categories to match the aisles of your favorite
-									supermarket.
+									Go to Main menu [<ion-icon
+										name="menu"
+										style="font-size: 1.4em; vertical-align: middle"
+									></ion-icon
+									>] > My Lists [
+									<span
+										class="mdi mdi-folder-multiple-outline"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span>
+									]. <br />
+									On the Lists screen, toggle to "Product Categories" icon [
+									<span
+										class="mdi mdi-food-outline"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span>
+									] at the top bar. <br />Create unique categories to match the
+									aisles of your favorite supermarket.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -334,11 +381,40 @@
 								</li>
 								<p>
 									Arrange categories to match your walking path in the store for
-									a faster shopping experience.
+									a faster shopping experience. <br />
+									Long-press on handle [<span
+										class="mdi mdi-drag-vertical"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span
+									>] and drag to reorder your categories. <br />
+									Note that this order is going to be applied to all your lists
+									for a consistent experience.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Rename or Edit Categories/Aisles:</strong>
+								</li>
+								<p>
+									Rename or fine-tune your categories/aisles. <br />
+									Simply tap on any item to reveal keyboard and a blinking
+									cursor, and rename it to your liking.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Delete a Category/Aisle:</strong>
+								</li>
+								<p>
+									Swipe right to delete a category/aisle you no longer need.
+									<br />
+									Note that deleting a category/aisle is permanent and cannot be
+									undone. <br />
+									Do not you worry, the items within that category/aisle will
+									not be removed from your Product Library. <br />They will
+									merely be reassigned to "No category".
 								</p>
 							</ul>
 
-							<h4>Loyalty Cards Wallet</h4>
+							<h4 class="pt-4">Loyalty Cards Wallet</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -346,7 +422,11 @@
 								</li>
 								<p>
 									Lighten your physical wallet. Go to the Cards section and tap
-									'+' to add your club and loyalty cards.
+									'+' to add your club and loyalty cards. <br />
+									You can either make photo of the card or make a screenshot of
+									your Apple Wallet. <br />
+									Then add your photo or the screenshot from your photo library,
+									crop it to fit and save.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -358,15 +438,20 @@
 								</p>
 							</ul>
 
-							<h4>Spending Tracker</h4>
+							<h4 class="pt-4">Spending Tracker</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong>Record Spending:</strong>
 								</li>
 								<p>
-									After shopping, save the total amount using the spending
-									option in the list menu.
+									To save your spending after shopping, press the "Total Spent"
+									button. <br />
+									It is accessible either from your Active List Page just
+									underneath the list or from the Loyalty/ Club card view.
+									<br />
+									Enter the total amount you spent and save it to keep track of
+									your expenses.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -374,19 +459,23 @@
 								</li>
 								<p>
 									Navigate to Settings > Spending Tracker to view your
-									transactions, monthly totals, and daily averages.
+									transactions, monthly totals, and daily averages. <br />
+									You can filter your history by a date range and a chosen
+									shopping list. <br />
+									You can select as many shopping lists as you want to analyze
+									your spending across different types of shopping trips.
 								</p>
 							</ul>
 
-							<h4>Settings & Personalization</h4>
+							<h4 class="pt-4">Settings & Personalization</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong>Choice of Theme:</strong>
 								</li>
 								<p>
-									Switch between Light and Dark themes in Settings to suit your
-									preference.
+									Switch between System, Light and Dark themes in Settings to
+									suit your preference.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
@@ -394,7 +483,9 @@
 								</li>
 								<p>
 									Create a profile in Settings to enable sharing features with
-									friends and family.
+									friends and family. <br />
+									Your profile can be seen only by those you share your lists
+									with and it is not public.
 								</p>
 							</ul>
 						</div>
@@ -402,7 +493,10 @@
 				</div>
 			</section>
 
-			<section class="service-details section pt-0 doc">
+			<!-- -------------------------------------------------------------------- -->
+			<!-- CONTACT SUPPORT EMAIL FORM -->
+			<!-- --------------------------------------------------------------------- -->
+			<section class="contact section pt-0 doc">
 				<div class="container">
 					<div class="row gy-lg-5 gy-4 justify-content-center">
 						<h3 id="contact" class="pt-5">Contact Support:</h3>
@@ -422,10 +516,10 @@
 								<input
 									type="hidden"
 									name="access_key"
-									value="1ed77c65-d792-4983-a515-5425130c0019"
+									value="a5bc24a5-6e94-48bb-aa4f-d628516612e3"
 								/>
 
-								<input type="hidden" name="from_name" value="team5.es" />
+								<input type="hidden" name="from_name" value="team5.dev" />
 
 								<div class="row gy-4">
 									<div class="col-md-6">
@@ -449,13 +543,14 @@
 									</div>
 
 									<div class="col-md-12">
-										<input
-											type="text"
-											class="form-control"
-											name="subject"
-											placeholder="Subject"
-											required=""
-										/>
+										<select class="form-control" name="subject" required="">
+											<option value="" disabled selected>Subject</option>
+											<option value="reporting a bug">Reporting a bug</option>
+											<option value="add/improve a feature">
+												Add/improve a feature
+											</option>
+											<option value="other">Other</option>
+										</select>
 									</div>
 
 									<div class="col-md-12 mb-lg-3">
