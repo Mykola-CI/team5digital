@@ -100,7 +100,7 @@
 					<ul>
 						<li><a href="../../">Home</a></li>
 						<li class="dropdown">
-							<a href="../../#shoplyste" 
+							<a href="../../#shoplyste"
 								><span>Shoplyste</span>
 								<i class="bi bi-chevron-down toggle-dropdown"></i
 							></a>
@@ -116,7 +116,7 @@
 							></a>
 							<ul>
 								<li><a href="#howto">How To</a></li>
-								<li><a href="#faq">FAQ</a></li>
+								<li><a href="#contact">Contact Support</a></li>
 							</ul>
 						</li>
 						<li><a href="../../shoplyste/terms/">Terms</a></li>
@@ -140,7 +140,7 @@
 			<!-- Service Details Section -->
 			<section id="service-details" class="service-details section pt-0 doc">
 				<div class="container">
-					<div class="row gy-lg-5 gy-4">
+					<div class="row gy-lg-5 gy-4 justify-content-center">
 						<h3 id="howto" class="pt-5">How To:</h3>
 						<div
 							class="col-lg-10 ps-lg-5"
@@ -203,6 +203,90 @@
 									>
 								</li>
 							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="service-details section pt-0 doc">
+				<div class="container">
+					<div class="row gy-lg-5 gy-4 justify-content-center">
+						<h3 id="contact" class="pt-5">Contact Support:</h3>
+						<div
+							class="col-lg-10 ps-lg-5"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<form
+								action="https://api.web3forms.com/submit"
+								method="post"
+								class="php-email-form"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<!-- Replace with your Access Key -->
+								<input
+									type="hidden"
+									name="access_key"
+									value="1ed77c65-d792-4983-a515-5425130c0019"
+								/>
+
+								<input type="hidden" name="from_name" value="team5.es" />
+
+								<div class="row gy-4">
+									<div class="col-md-6">
+										<input
+											type="text"
+											name="name"
+											class="form-control"
+											placeholder="Your Name"
+											required=""
+										/>
+									</div>
+
+									<div class="col-md-6">
+										<input
+											type="email"
+											class="form-control"
+											name="email"
+											placeholder="Your Email"
+											required=""
+										/>
+									</div>
+
+									<div class="col-md-12">
+										<input
+											type="text"
+											class="form-control"
+											name="subject"
+											placeholder="Subject"
+											required=""
+										/>
+									</div>
+
+									<div class="col-md-12 mb-lg-3">
+										<textarea
+											class="form-control"
+											name="message"
+											rows="6"
+											placeholder="Message"
+											required=""
+										></textarea>
+									</div>
+
+									<!-- Honeypot Spam Protection -->
+									<input
+										type="checkbox"
+										name="botcheck"
+										class="hidden"
+										style="display: none"
+									/>
+
+									<div class="col-md-12 text-center mb-lg-5">
+										<button type="submit">Send Message</button>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
