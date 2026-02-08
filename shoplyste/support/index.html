@@ -13,14 +13,6 @@
 			content="music events, business events, event management Spain, music production, equipment rental, sound system installation, event planning Spain, concert organization, audio-visual services, music equipment service, English Spanish Ukrainian events"
 		/>
 
-		<link rel="alternate" hreflang="en" href="https://team5.es/en/" />
-		<link rel="alternate" hreflang="es" href="https://team5.es/es/" />
-		<link rel="alternate" hreflang="uk-UA" href="https://team5.es/ua/" />
-
-		<!-- Favicons -->
-		<!-- this line should be probably removed when the code moves to production repository -->
-		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
-
 		<!-- These lines were tested in production -->
 		<link href="../../assets/img/favicon.png" rel="icon" />
 		<link
@@ -71,6 +63,11 @@
 		<link
 			href="../../assets/vendor/swiper/swiper-bundle.min.css"
 			rel="stylesheet"
+		/>
+		<!-- Material Design Icons (for Shopping Bag, Cards, Folders) -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
 		/>
 
 		<!-- Main CSS File -->
@@ -147,61 +144,258 @@
 							data-aos="fade-up"
 							data-aos-delay="200"
 						>
+							<h4>Navigate across Shoplyste</h4>
 							<ul>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<span
-										><strong>Add new item:</strong> Tap '+' icon at the right
-										corner of the top bar or simply tap on empty area to add a
-										new item. Tap '✔️' at the right corner of the top bar or at
-										the bottom right corner of your keyboard to submit the new
-										item.
-									</span>
-								</li>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<span
-										><strong>Choose item from prompts:</strong> At every new
-										entry your item (if new) will be stored in Product Library
-										so you can see prompts next time and speed up your list
-										creation.
-									</span>
-								</li>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<span
-										><strong>Check off items:</strong> Check off your items to
-										mark them as done. Simply tap on a circle at the left of an
-										item.</span
+									<strong
+										>Main Menu
+										<ion-icon
+											name="menu"
+											style="font-size: 1.4em; vertical-align: middle"
+										></ion-icon
+										>:</strong
 									>
 								</li>
+								<p>
+									Tap the spherical menu button at the bottom right corner of
+									any screen to reveal navigation options.
+								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<span
-										><strong>Toggle views:</strong> Flip between Category/Aisle
-										view and Simple List view. While in Simple List view change
-										order of items by dragging (long-press on an item's handle
-										at the right corner to start dragging).</span
+									<strong
+										>Active Shopping List
+										<span
+											class="mdi mdi-shopping-outline"
+											style="font-size: 1.2em; vertical-align: middle"
+										></span
+										>:</strong
 									>
 								</li>
+								<p>
+									Takes you to your currently active shopping list contents
+									where you can add and check off items.
+								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<span
-										><strong>Swipe left or right to see new options:</strong>
-										Swipe left. Tap "+/-" buttons to set a required quantity for
-										an item. Tap on "folder with arrows" button to assign an
-										item with a Product Category. Swipe right to delete an
-										item.</span
+									<strong
+										>Loyalty Cards
+										<span
+											class="mdi mdi-credit-card-settings-outline"
+											style="font-size: 1.2em; vertical-align: middle"
+										></span
+										>:</strong
 									>
 								</li>
+								<p>Access your wallet of club and loyalty cards.</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<span
-										><strong>Move all items:</strong> Press the button "Move
-										Items" at the bottom of your List content and choose
-										shopping list you want to move your items to.</span
+									<strong
+										>My Lists
+										<span
+											class="mdi mdi-folder-multiple-outline"
+											style="font-size: 1.2em; vertical-align: middle"
+										></span
+										>:</strong
 									>
 								</li>
+								<p>
+									Manage all your shopping lists and customize product
+									categories.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong
+										>Settings
+										<ion-icon
+											name="information-circle"
+											style="font-size: 1.4em; vertical-align: middle"
+										></ion-icon
+										>:</strong
+									>
+								</li>
+								<p>
+									Configure themes, manage your profile, and view your spending
+									tracker.
+								</p>
+							</ul>
+							<h4>Manage Shopping Lists</h4>
+							<ul>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Create a new list:</strong>
+								</li>
+								<p>
+									Go to Main menu [<ion-icon
+										name="menu"
+										style="font-size: 1.4em; vertical-align: middle"
+									></ion-icon
+									>] > My Lists [
+									<span
+										class="mdi mdi-folder-multiple-outline"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span>
+									]. <br />
+									Or tap on the active shopping list title to open a modal with
+									the list of your available Shopping Lists and tap 'Manage
+									Lists' button at the bottom.<br />
+									Start planning your next trip by tapping the '+' button on the
+									Lists screen. Build a new list for groceries, a party, or a
+									project.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Rename or Edit:</strong>
+								</li>
+								<p>
+									Keep your lists organized and up-to-date. <br />
+									Simply tap on any list to reveal keyboard and a blinking
+									cursor, and rename it to your liking.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Delete a list:</strong>
+								</li>
+								<p>
+									Swipe to delete a list you no longer need. <br />
+									Note that deleting a list is permanent and cannot be undone.
+									It is going to remove all items within that list as well.
+								</p>
+							</ul>
+							<h4>Manage List Contents</h4>
+							<ul>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Add items:</strong>
+								</li>
+								<p>
+									Tap '+' icon at the right corner of the top bar or simply tap
+									on empty area to include a new item. Tap '✔️' to put it in the
+									list.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Collect items quickly:</strong>
+								</li>
+								<p>
+									Typing prompts from your Product Library help you collect
+									items faster. Every new item you include is saved for next
+									time.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Mark as collected:</strong>
+								</li>
+								<p>
+									Check off your items as you put them in your cart. Simply tap
+									on the circle at the left of an item.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Toggle views:</strong>
+								</li>
+								<p>
+									Flip between Category/Aisle view and Simple List view. While
+									in Simple List view, reorder items by dragging (long-press on
+									handle).
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Swipe for options:</strong>
+								</li>
+								<p>
+									Swipe left to set quantity (+/-) or assign a Category (folder
+									icon). Swipe right to delete an item from the list.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Move all items:</strong>
+								</li>
+								<p>
+									Plan efficiently by moving all items to another list. Tap the
+									"three dots" menu and select "Move all items".
+								</p>
+							</ul>
+
+							<h4>Manage Product Categories</h4>
+							<ul>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Customize Aisles:</strong>
+								</li>
+								<p>
+									On the Lists screen, toggle to "Product Categories". Create
+									unique categories to match the aisles of your favorite
+									supermarket.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Reorder Categories:</strong>
+								</li>
+								<p>
+									Arrange categories to match your walking path in the store for
+									a faster shopping experience.
+								</p>
+							</ul>
+
+							<h4>Loyalty Cards Wallet</h4>
+							<ul>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Add Cards:</strong>
+								</li>
+								<p>
+									Lighten your physical wallet. Go to the Cards section and tap
+									'+' to add your club and loyalty cards.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Use Cards:</strong>
+								</li>
+								<p>
+									Tap on any card in your stack to display its barcode at the
+									checkout.
+								</p>
+							</ul>
+
+							<h4>Spending Tracker</h4>
+							<ul>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Record Spending:</strong>
+								</li>
+								<p>
+									After shopping, save the total amount using the spending
+									option in the list menu.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Analyze History:</strong>
+								</li>
+								<p>
+									Navigate to Settings > Spending Tracker to view your
+									transactions, monthly totals, and daily averages.
+								</p>
+							</ul>
+
+							<h4>Settings & Personalization</h4>
+							<ul>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Choice of Theme:</strong>
+								</li>
+								<p>
+									Switch between Light and Dark themes in Settings to suit your
+									preference.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Manage Profile:</strong>
+								</li>
+								<p>
+									Create a profile in Settings to enable sharing features with
+									friends and family.
+								</p>
 							</ul>
 						</div>
 					</div>
@@ -330,6 +524,15 @@
 		<script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 		<script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 		<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<!-- Ionicons (for Menu, Info) -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
 
 		<!-- Main JS File -->
 		<script src="../../assets/js/main.js"></script>
