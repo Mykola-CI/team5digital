@@ -3,36 +3,37 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-		<title>Team5 Digital Products</title>
+		<title>Shoplyste</title>
 		<meta
 			name="description"
-			content="Team 5 Digital Products specializes in music and business event organization, music production, equipment rentals, and event management in Spain. Available in English, Spanish, and Ukrainian."
+			content="Shoplyste is a user-friendly shopping list app designed to make your grocery shopping experience effortless and enjoyable. With its intuitive interface and powerful features, Shoplyste helps you create, organize, and share your shopping lists with ease. Whether you're planning a weekly grocery run or a quick trip to the store, Shoplyste keeps everything at your fingertips, ensuring you never forget an item again."
 		/>
 		<meta
 			name="keywords"
-			content="music events, business events, event management Spain, music production, equipment rental, sound system installation, event planning Spain, concert organization, audio-visual services, music equipment service, English Spanish Ukrainian events"
+			content="mobile application, shopping list app, grocery list app, user-friendly shopping list, intuitive shopping list, powerful shopping list features, organize shopping lists, share shopping lists, grocery shopping experience, effortless shopping list, enjoyable shopping list"
 		/>
 
-		<!-- These lines were tested in production -->
-		<link href="assets/img/favicon.png" rel="icon" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="assets/img/apple-touch-icon.png"
+			href="../assets/img/shoplyste_favicon/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="assets/img/favicon-32x32.png"
+			href="../assets/img/shoplyste_favicon/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="assets/img/favicon-16x16.png"
+			href="../assets/img/shoplyste_favicon/favicon-16x16.png"
 		/>
-		<link rel="manifest" href="assets/img/site.webmanifest" />
+		<link
+			rel="manifest"
+			href="../assets/img/shoplyste_favicon/site.webmanifest"
+		/>
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -44,23 +45,29 @@
 
 		<!-- Vendor CSS Files -->
 		<link
-			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			href="../assets/vendor/bootstrap/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
 		<link
-			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
 			rel="stylesheet"
 		/>
-		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-		<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+		<link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
 		<link
-			href="assets/vendor/glightbox/css/glightbox.min.css"
+			href="../assets/vendor/animate.css/animate.min.css"
 			rel="stylesheet"
 		/>
-		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+		<link
+			href="../assets/vendor/glightbox/css/glightbox.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="../assets/vendor/swiper/swiper-bundle.min.css"
+			rel="stylesheet"
+		/>
 
 		<!-- Main CSS File -->
-		<link href="assets/css/main.css" rel="stylesheet" />
+		<link href="../assets/css/main.css" rel="stylesheet" />
 	</head>
 
 	<body class="index-page">
@@ -71,7 +78,7 @@
 				<a href="/" class="logo d-flex align-items-center flex-grow-1">
 					<div style="width: 40px">
 						<img
-							src="assets/img/team5_logo_classic_blue1.png"
+							src="../assets/img/team5_logo_classic_blue1.png"
 							class="img-fluid"
 							alt="Team5 logo"
 						/>
@@ -84,29 +91,31 @@
 
 				<nav id="navmenu" class="navmenu">
 					<ul>
-						<li><a href="#hero" class="active">Home</a></li>
+						<li><a href="../#hero">Home</a></li>
 						<li class="dropdown">
-							<a href="#shoplyste"
-								><span>Shoplyste</span>
-								<i class="bi bi-chevron-down toggle-dropdown"></i
-							></a>
+							<a class="active" href="" >
+								<span>Shoplyste</span>
+								<i class="bi bi-chevron-down toggle-dropdown"></i>
+							</a>
 							<ul>
 								<li><a href="#shoplyste">About</a></li>
 								<li><a href="#features">Features</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="shoplyste/support/"
+							<a href="support/"
 								><span>Support</span>
 								<i class="bi bi-chevron-down toggle-dropdown"></i
 							></a>
 							<ul>
-								<li><a href="shoplyste/support/#howto">How To</a></li>
-								<li><a href="shoplyste/support/#faq">FAQ</a></li>
+								<li><a href="support/#howto">How To</a></li>
+								<li>
+									<a href="support/#contact">Contact Support</a>
+								</li>
 							</ul>
 						</li>
-						<li><a href="shoplyste/terms/">Terms</a></li>
-						<li><a href="shoplyste/privacy/">Privacy</a></li>
+						<li><a href="terms/">Terms</a></li>
+						<li><a href="privacy/">Privacy</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 					<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -115,114 +124,13 @@
 		</header>
 
 		<main class="main">
-			<!-- Hero Section -->
-			<section id="hero" class="hero section dark-background">
-				<div
-					id="hero-carousel"
-					data-bs-interval="8000"
-					class="container carousel carousel-fade"
-					data-bs-ride="carousel"
-				>
-					<!-- Slide 1 -->
-					<div class="carousel-item active">
-						<div class="carousel-container">
-							<h2 class="animate__animated animate__fadeInDown">
-								Digital Products Division
-							</h2>
-							<p class="animate__animated animate__fadeInUp">
-								We are happy to announce the launch of our new Digital Products
-								Division. Gaining momentum in the market, we are focused on
-								delivering high-quality digital products that meet the needs of
-								our clients and product users.
-								<span class="d-none d-lg-inline">
-									We will be around 24/7 to your service and support.
-								</span>
-							</p>
-							<a
-								href="#shoplyste"
-								class="btn-get-started animate__animated animate__fadeInUp scrollto"
-								>Read More</a
-							>
-						</div>
-					</div>
-
-					<!-- Slide 2 -->
-					<div class="carousel-item">
-						<div class="carousel-container">
-							<h2 class="animate__animated animate__fadeInDown">
-								Entertainment Division
-							</h2>
-							<p class="animate__animated animate__fadeInUp">
-								Our company is a team of professionals united by a passion for
-								crafting unique events and impactful projects. We are dedicated
-								to providing our clients with the best possible service and
-								support.
-								<span class="d-none d-lg-inline">
-									Our team is made up of experienced professionals who are
-									passionate about what they do and are committed to delivering
-									exceptional results.
-								</span>
-							</p>
-							<a
-								href="https://team5.es"
-								class="btn-get-started animate__animated animate__fadeInUp scrollto"
-								>Learn More</a
-							>
-						</div>
-					</div>
-
-					<a
-						class="carousel-control-prev"
-						href="#hero-carousel"
-						role="button"
-						data-bs-slide="prev"
-					>
-						<span
-							class="carousel-control-prev-icon bi bi-chevron-left"
-							aria-hidden="true"
-							style="margin-bottom: 110px"
-						></span>
-					</a>
-
-					<a
-						class="carousel-control-next"
-						href="#hero-carousel"
-						role="button"
-						data-bs-slide="next"
-					>
-						<span
-							class="carousel-control-next-icon bi bi-chevron-right"
-							aria-hidden="true"
-							style="margin-bottom: 110px"
-						></span>
-					</a>
+			<!-- Page Title -->
+			<section class="page-title dark-background">
+				<div class="container position-relative">
+					<h1>Shoplyste</h1>
 				</div>
-
-				<svg
-					class="hero-waves"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-					viewBox="0 24 150 28 "
-					preserveAspectRatio="none"
-				>
-					<defs>
-						<path
-							id="wave-path"
-							d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-						></path>
-					</defs>
-					<g class="wave1">
-						<use xlink:href="#wave-path" x="50" y="3"></use>
-					</g>
-					<g class="wave2">
-						<use xlink:href="#wave-path" x="50" y="0"></use>
-					</g>
-					<g class="wave3">
-						<use xlink:href="#wave-path" x="50" y="9"></use>
-					</g>
-				</svg>
 			</section>
-			<!-- /Hero Section -->
+			<!-- End Page Title -->
 
 			<!-- About Section -->
 			<section id="shoplyste" class="about section">
@@ -274,7 +182,11 @@
 							</p>
 						</div>
 					</div>
-					<div class="row gx-5 gy-3 gy-lg-0" data-aos="fade-up" data-aos-delay="100">
+					<div
+						class="row gx-5 gy-3 gy-lg-0"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
 						<div class="col-lg-6">
 							<i class="bi bi-check2-circle"></i>
 							<span class="fs-5">Swipe, tap, done </span>
@@ -377,7 +289,7 @@
 					<div class="text-center pt-5" data-aos="fade-up" data-aos-delay="200">
 						<a href="">
 							<img
-								src="assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+								src="../assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
 								alt="Download on the App Store"
 								style="height: 56px; width: auto"
 							/>
@@ -404,7 +316,7 @@
 							data-aos-delay="100"
 						>
 							<div class="screenshot-heading-link">
-								<a href="shoplyste/list_contents" class="text-center">
+								<a href="../shoplyste/list_contents" class="text-center">
 									<h3 style="--bs-text-opacity: 0.5">
 										Manage List Contents &nbsp;ᐳ
 									</h3>
@@ -412,12 +324,12 @@
 							</div>
 							<div class="service-item position-relative">
 								<img
-									src="assets/img/app_screenshots/home_draglist_lightmode.PNG"
+									src="../assets/img/app_screenshots/home_draglist_lightmode.PNG"
 									class="img-fluid img1"
 									alt=""
 								/>
 								<img
-									src="assets/img/app_screenshots/home_draglist_dark.PNG"
+									src="../assets/img/app_screenshots/home_draglist_dark.PNG"
 									class="img-fluid img2"
 									alt=""
 								/>
@@ -432,18 +344,18 @@
 							style="aspect-ratio: 1/1.95"
 						>
 							<div class="screenshot-heading-link">
-								<a href="shoplyste/list_contents" class="text-center">
+								<a href="../shoplyste/list_contents" class="text-center">
 									<h3>Switch To Category View &nbsp;ᐳ</h3>
 								</a>
 							</div>
 							<div class="service-item position-relative">
 								<img
-									src="assets/img/app_screenshots/home_categorylist_lightmode.PNG"
+									src="../assets/img/app_screenshots/home_categorylist_lightmode.PNG"
 									class="img-fluid img1"
 									alt=""
 								/>
 								<img
-									src="assets/img/app_screenshots/home_categorylist_dark.PNG"
+									src="../assets/img/app_screenshots/home_categorylist_dark.PNG"
 									class="img-fluid img2"
 									alt=""
 								/>
@@ -458,18 +370,18 @@
 							style="aspect-ratio: 1/1.95"
 						>
 							<div class="screenshot-heading-link">
-								<a href="service-details-rental.html" class="text-center">
+								<a href="../shoplyste/lists&categories/" class="text-center">
 									<h3>Edit Lists & Categories &nbsp;ᐳ</h3>
 								</a>
 							</div>
 							<div class="service-item position-relative">
 								<img
-									src="assets/img/app_screenshots/lists_light.PNG"
+									src="../assets/img/app_screenshots/lists_light.PNG"
 									class="img-fluid img1"
 									alt=""
 								/>
 								<img
-									src="assets/img/app_screenshots/lists_dark.PNG"
+									src="../assets/img/app_screenshots/lists_dark.PNG"
 									class="img-fluid img2"
 									alt=""
 								/>
@@ -484,18 +396,18 @@
 							style="aspect-ratio: 1/1.95"
 						>
 							<div class="screenshot-heading-link">
-								<a href="service-details-video.html" class="text-center">
+								<a href="../club_cards" class="text-center">
 									<h3>Stash Your Club Cards &nbsp;ᐳ</h3>
 								</a>
 							</div>
 							<div class="service-item position-relative">
 								<img
-									src="assets/img/app_screenshots/club_cards_light.PNG"
+									src="../assets/img/app_screenshots/club_cards_light.PNG"
 									class="img-fluid img1"
 									alt=""
 								/>
 								<img
-									src="assets/img/app_screenshots/club_cards_dark.PNG"
+									src="../assets/img/app_screenshots/club_cards_dark.PNG"
 									class="img-fluid img2"
 									alt=""
 								/>
@@ -510,18 +422,18 @@
 							style="aspect-ratio: 1/1.95"
 						>
 							<div class="screenshot-heading-link">
-								<a href="service-details-installs.html" class="text-center">
+								<a href="../shoplyste/share_lists/" class="text-center">
 									<h3>Share Your Lists &nbsp;ᐳ</h3>
 								</a>
 							</div>
 							<div class="service-item position-relative">
 								<img
-									src="assets/img/app_screenshots/share_light.PNG"
+									src="../assets/img/app_screenshots/share_light.PNG"
 									class="img-fluid img1"
 									alt=""
 								/>
 								<img
-									src="assets/img/app_screenshots/share_dark.PNG"
+									src="../assets/img/app_screenshots/share_dark.PNG"
 									class="img-fluid img2"
 									alt=""
 								/>
@@ -536,18 +448,18 @@
 							style="aspect-ratio: 1/1.95"
 						>
 							<div class="screenshot-heading-link">
-								<a href="service-details-music.html" class="text-center">
+								<a href="../shoplyste/track_spendings/" class="text-center">
 									<h3>Track Your Spendings &nbsp;ᐳ</h3>
 								</a>
 							</div>
 							<div class="service-item position-relative">
 								<img
-									src="assets/img/app_screenshots/tracker_light.PNG"
+									src="../assets/img/app_screenshots/tracker_light.PNG"
 									class="img-fluid img1"
 									alt=""
 								/>
 								<img
-									src="assets/img/app_screenshots/tracker_dark.PNG"
+									src="../assets/img/app_screenshots/tracker_dark.PNG"
 									class="img-fluid img2"
 									alt=""
 								/>
@@ -576,7 +488,7 @@
 						<div class="col-xl-3 cta-btn-container text-center">
 							<a href="">
 								<img
-									src="assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg"
+									src="../assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg"
 									alt="Download on the App Store"
 									style="height: 56px; width: auto"
 								/>
@@ -617,7 +529,7 @@
 								data-aos="fade-up"
 								data-aos-delay="300"
 							>
-								<i class="bi bi-telephone flex-shrink-0"></i>
+								<i class="bi bi-envelope flex-shrink-0"></i>
 								<div>
 									<h3>Marketing</h3>
 									<p>admin@team5.dev</p>
@@ -653,10 +565,10 @@
 								<input
 									type="hidden"
 									name="access_key"
-									value="1ed77c65-d792-4983-a515-5425130c0019"
+									value="f4e5c1c3-0786-4c73-bf7d-3dab06eec990"
 								/>
 
-								<input type="hidden" name="from_name" value="team5.es" />
+								<input type="hidden" name="from_name" value="team5.dev" />
 
 								<div class="row gy-4">
 									<div class="col-md-6">
@@ -750,15 +662,15 @@
 			src="https://kit.fontawesome.com/e0f7937b3c.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/vendor/aos/aos.js"></script>
-		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-		<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="../assets/vendor/aos/aos.js"></script>
+		<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 		<!-- Main JS File -->
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/language.js"></script>
-		<script src="assets/js/touch-swap.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/language.js"></script>
+		<script src="../assets/js/touch-swap.js"></script>
 	</body>
 </html>
