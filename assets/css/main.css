@@ -1075,6 +1075,16 @@ section,
 	background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
+.call-to-action .cta-btn-container a img {
+	transition: all 0.3s ease;
+	border-radius: 0;
+}
+
+.call-to-action .cta-btn-container a:hover img {
+	transform: scale(1.1);
+	border-radius: 20px;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
