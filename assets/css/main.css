@@ -1158,8 +1158,10 @@ section,
 		color: var(--accent-color);
 		opacity: 1;
 	}
+}
 
-	/* Swap images on hover with fade */
+/* Swap images on hover with fade */
+@media (hover: hover) {
 	.service-item:hover .img1 {
 		opacity: 0;
 	}
