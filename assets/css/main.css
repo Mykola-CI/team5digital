@@ -92,6 +92,10 @@ a:hover {
 	text-decoration: none;
 }
 
+a h4:hover {
+	color: var(--accent-color);
+} 
+
 h1,
 h2,
 h3,
