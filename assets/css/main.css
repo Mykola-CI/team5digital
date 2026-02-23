@@ -1164,13 +1164,13 @@ section,
 	}
 }
 
-/* Swap images on hover with fade */
+/* Swap images on hover with fade (disabled on touch devices to prevent sticky :hover) */
 @media (hover: hover) {
-	.service-item:hover .img1 {
+	html:not(.touch-device) .service-item:hover .img1 {
 		opacity: 0;
 	}
 
-	.service-item:hover .img2 {
+	html:not(.touch-device) .service-item:hover .img2 {
 		opacity: 1;
 	}
 }

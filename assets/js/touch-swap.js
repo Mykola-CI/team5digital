@@ -13,6 +13,9 @@
 
 	if (!isTouchDevice) return;
 
+	// Flag for CSS to disable hover-based image swap on touch devices
+	document.documentElement.classList.add("touch-device");
+
 	document.addEventListener("DOMContentLoaded", function () {
 		const serviceItems = document.querySelectorAll(".service-item");
 
@@ -25,8 +28,17 @@
 			item.addEventListener(
 				"touchstart",
 				function (e) {
-					// Toggle the 'touched' class - CSS handles the fade transition
-					item.classList.toggle("touched");
+					const isCurrentlyTouched = item.classList.contains("touched");
+
+					// Reset ALL items to img1 (default) first
+					serviceItems.forEach(function (otherItem) {
+						otherItem.classList.remove("touched");
+					});
+
+					// If this item was not already showing img2, activate it
+					if (!isCurrentlyTouched) {
+						item.classList.add("touched");
+					}
 				},
 				{ passive: true },
 			);
