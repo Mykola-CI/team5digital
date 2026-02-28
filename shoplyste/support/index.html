@@ -161,7 +161,7 @@
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong
-										>Main Menu
+										>Use Main Menu
 										<ion-icon
 											name="menu"
 											style="font-size: 1.4em; vertical-align: middle"
@@ -176,7 +176,7 @@
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong
-										>Active Shopping List Content
+										>Get To Active Shopping List Content
 										<span
 											class="mdi mdi-shopping-outline"
 											style="font-size: 1.2em; vertical-align: middle"
@@ -192,7 +192,7 @@
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong
-										>Loyalty Cards
+										>Navigate To Loyalty Cards
 										<span
 											class="mdi mdi-credit-card-settings-outline"
 											style="font-size: 1.2em; vertical-align: middle"
@@ -204,7 +204,7 @@
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong
-										>My Lists
+										>Navigate To My Lists
 										<span
 											class="mdi mdi-folder-multiple-outline"
 											style="font-size: 1.2em; vertical-align: middle"
@@ -213,13 +213,13 @@
 									>
 								</li>
 								<p>
-									Manage all your shopping lists and customize product
+									Manage all your shopping lists and customize your product
 									categories.
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong
-										>Settings
+										>Navigate To Settings Page
 										<ion-icon
 											name="information-circle"
 											style="font-size: 1.4em; vertical-align: middle"
@@ -232,7 +232,7 @@
 									tracker.
 								</p>
 							</ul>
-							<a href=""
+							<a href="../lists&categories/"
 								><h4 class="pt-4">
 									Manage Shopping Lists
 									<span class="d-xxl-none">&#10150;</span>
@@ -280,7 +280,7 @@
 									It is going to remove all items within that list as well.
 								</p>
 							</ul>
-							<a href=""
+							<a href="../list_contents/"
 								><h4 class="pt-4">
 									Manage List Contents
 									<span class="d-xxl-none">&#10150;</span>
@@ -307,7 +307,7 @@
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<strong>Mark as Done:</strong>
+									<strong>Mark items as Done:</strong>
 								</li>
 								<p>
 									Check off your items as you put them in your cart. Simply tap
@@ -339,7 +339,7 @@
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<strong>Swipe for options:</strong>
+									<strong>Set Quantity or Category:</strong>
 								</li>
 								<p>
 									Swipe left to set quantity (+/-) or assign a Category (folder
@@ -352,7 +352,12 @@
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<strong>Move all items:</strong>
+									<strong>Delete an item:</strong>
+								</li>
+								<p>Swipe right to delete an item from the list.</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Move all items to a different List:</strong>
 								</li>
 								<p>
 									Plan efficiently by moving all items to another list. Press
@@ -363,7 +368,7 @@
 								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
-									<strong>Delete all 'Done' items:</strong>
+									<strong>Delete all 'Done' items at once:</strong>
 								</li>
 								<p>
 									Press the "Clear Done" button underneath your Active List to
@@ -427,7 +432,7 @@
 									edit autonomously between exports/imports until the next sync.
 								</p>
 							</ul>
-							<a href=""
+							<a href="../lists&categories/"
 								><h4 class="pt-4">
 									Manage Product Categories
 									<span class="d-xxl-none">&#10150;</span>
@@ -497,7 +502,7 @@
 								</p>
 							</ul>
 
-							<a href=""
+							<a href="../club_cards/"
 								><h4 class="pt-4">
 									Loyalty Cards Wallet
 									<span class="d-xxl-none">&#10150;</span>
@@ -509,8 +514,18 @@
 									<strong>Add Cards:</strong>
 								</li>
 								<p>
-									Lighten your physical wallet. Go to the Cards section and tap
-									'+' to add your club and loyalty cards. <br />
+									Lighten your physical wallet. <br />
+									Go to the Cards section [ tap Menu toggle button
+									<ion-icon
+										name="menu"
+										style="font-size: 1.4em; vertical-align: middle"
+									></ion-icon>
+									and then -
+									<span
+										class="mdi mdi-credit-card-settings-outline"
+										style="font-size: 1.2em; vertical-align: middle"
+									></span>
+									]. <br />Tap '+' to add your club and loyalty cards. <br />
 									You can either make photo of the card or make a screenshot of
 									your Apple Wallet. <br />
 									Then add your photo or the screenshot from your photo library,
@@ -526,7 +541,7 @@
 								</p>
 							</ul>
 
-							<a href=""
+							<a href="../track_spendings/"
 								><h4 class="pt-4">
 									Spending Tracker
 									<span class="d-xxl-none">&#10150;</span>
@@ -551,8 +566,18 @@
 									<strong>Analyze History:</strong>
 								</li>
 								<p>
-									Navigate to Settings > Spending Tracker to view your
-									transactions, monthly totals, and daily averages. <br />
+									Navigate to <em>Settings</em> [ tap
+									<ion-icon
+										name="menu"
+										style="font-size: 1.4em; vertical-align: middle"
+									></ion-icon>
+									and then -
+									<ion-icon
+										name="information-circle"
+										style="font-size: 1.4em; vertical-align: middle"
+									></ion-icon>
+									] > <em>Spending Tracker</em> to view your transactions,
+									monthly totals, and daily averages. <br />
 									You can filter your history by a date range and a chosen
 									shopping list. <br />
 									You can select as many shopping lists as you want to analyze
@@ -560,30 +585,60 @@
 								</p>
 							</ul>
 
-							<a href=""
-								><h4 class="pt-4">
-									Settings & Personalization
-									<span class="d-xxl-none">&#10150;</span>
-								</h4></a
-							>
+							<h4 class="pt-4">
+								Settings & Personalization
+								<span class="d-xxl-none">&#10150;</span>
+							</h4>
+							<p>
+								Navigate to <em>Settings</em> [ tap Menu toggle button
+								<ion-icon
+									name="menu"
+									style="font-size: 1.4em; vertical-align: middle"
+								></ion-icon>
+								and then -
+								<ion-icon
+									name="information-circle"
+									style="font-size: 1.4em; vertical-align: middle"
+								></ion-icon>
+								]
+							</p>
 							<ul>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<strong>Choice of Theme:</strong>
-								</li>
-								<p>
-									Switch between System, Light and Dark themes in Settings to
-									suit your preference.
-								</p>
 								<li>
 									<i class="bi bi-check-circle"></i>
 									<strong>Manage Profile:</strong>
 								</li>
 								<p>
-									Create a profile in Settings to enable sharing features with
-									friends and family. <br />
+									Create a profile in <em>Settings</em> to enable sharing
+									features with friends and family. <br />
 									Your profile can be seen only by those you share your lists
-									with and it is not public.
+									with and it is not public. <br />
+									You will need to complete the "email or phone" field to be
+									able to share lists with others as it serves as your unique ID
+									in peer to peer communication. However, you can choose to put
+									in any nickname identifier and not bother with emails or phone
+									numbers if you do not want to. <br />
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Choose your preferred Theme:</strong>
+								</li>
+								<p>
+									Switch between System, Light and Dark themes in
+									<em>Settings</em> to suit your preference.
+								</p>
+								<li>
+									<i class="bi bi-check-circle"></i>
+									<strong>Product Library:</strong>
+								</li>
+								<p>
+									You can view all the items you've ever added to your lists in
+									your Product Library. <br />
+									From there, you can assign items to categories with swipe
+									left, or delete them from your library with swipe right.
+									<br />
+									The saved items are going to be suggested to you as you type
+									in the item name while adding new items to your lists, making
+									it faster to collect your shopping list contents.
 								</p>
 							</ul>
 						</div>
