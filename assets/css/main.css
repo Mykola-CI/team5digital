@@ -1090,7 +1090,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Features Section
 --------------------------------------------------------------*/
 .service-item {
 	background-color: var(--surface-color);
@@ -1173,6 +1173,73 @@ section,
 	html:not(.touch-device) .service-item:hover .img2 {
 		opacity: 1;
 	}
+}
+
+/*--------------------------------------------------------------
+# Subscription Section
+--------------------------------------------------------------*/
+.subscription {
+  background-color: var(--surface-color);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 60px 30px 60px 70px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 18px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.subscription .icon {
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 30px);
+}
+
+.subscription .icon i {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+.subscription h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.subscription p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (hover: none),
+(pointer: coarse) {
+  .subscription .service-arrow {
+    display: inline;
+    color: var(--accent-color);
+    font-size: 24px;
+    vertical-align: middle;
+    /* position: relative; 
+  top: 2px; */
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .subscription .service-arrow {
+    display: none; /* Hide the icon on non-touch devices */
+  }
+}
+
+@media (min-width: 1365px) {
+  .subscription:hover {
+    transform: translateY(-10px);
+  }
+
+  .subscription:hover h3 {
+    color: var(--accent-color);
+  }
 }
 
 /*--------------------------------------------------------------
