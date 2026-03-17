@@ -2008,8 +2008,9 @@ section,
 	padding: 5px 0;
 	display: flex;
 	align-items: center;
+	gap: 10px;
 }
-
+	
 .service-details ul i {
 	font-size: 20px;
 	margin-right: 8px;
