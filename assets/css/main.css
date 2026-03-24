@@ -1089,6 +1089,25 @@ section,
 	border-radius: 20px;
 }
 
+.store-badges {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+.store-badges a {
+	display: block;
+	flex-shrink: 0;
+}
+
+.store-badges img {
+	display: block;
+	height: 48px;
+	width: auto;
+}
+
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
