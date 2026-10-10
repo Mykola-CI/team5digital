@@ -1089,6 +1089,11 @@ section,
 	border-radius: 20px;
 }
 
+.call-to-action .cta-btn-container a img.shoplyste-icon {
+	border-radius: 20px;
+	transition: transform 0.3s ease;
+}
+
 .store-badges {
 	display: flex;
 	align-items: center;
